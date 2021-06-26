@@ -1,0 +1,1 @@
+.badgeBox{display:flex;align-items:center;justify-content:space-evenly}.badgeBoxItem{padding:10px}@media(max-width:768px){.badgeBox{flex-wrap:wrap}}

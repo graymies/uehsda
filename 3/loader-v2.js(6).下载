@@ -1,0 +1,101 @@
+(function() {
+
+    var __hs_cta_json = {"css":"a#cta_button_381663_a4a88014-bf3a-4315-8b56-0a9123d80cf8 {\n    cursor: pointer !important;\n\n    \n  }\n\na#cta_button_381663_a4a88014-bf3a-4315-8b56-0a9123d80cf8:hover {\n}\n\na#cta_button_381663_a4a88014-bf3a-4315-8b56-0a9123d80cf8:active, #cta_button_381663_a4a88014-bf3a-4315-8b56-0a9123d80cf8:active:hover {\n}\n\n","image_html":"<a id=\"cta_button_381663_a4a88014-bf3a-4315-8b56-0a9123d80cf8\" class=\"cta_button\" href=\"https://www.schilllandscaping.com/cs/c/?cta_guid=a4a88014-bf3a-4315-8b56-0a9123d80cf8&signature=AAH58kGSXBN4Q04NA3wpw8QTgnv0bPh3Dg&pageId=7494945147&placement_guid=20cfb280-3244-46a5-9784-f08bbd45260b&click=9dec1b98-db41-4b7e-b30d-ff66e78069a9&hsutk=c7a000001dd517361737017a48f9c8e2&canon=https%3A%2F%2Fwww.schilllandscaping.com%2F&utm_referrer=https%3A%2F%2Fwww.google.com.hk%2F&portal_id=381663&redirect_url=APefjpG7O05JplcTAd6j13eyAOwkbLV5i0K5ZRjlb_tp-h7DqLSpWqDW3MgJ3O-o79HRNlAI0LNsfDY129Jl0JRG5yD6TRTJMSYGWmZ53EztTQ4W_fvLFNMxE2j0Y5yiuIoyln5gkNPY\"  cta_dest_link=\"https://www.schilllandscaping.com/case-studies\"><img id=\"hs-cta-img-20cfb280-3244-46a5-9784-f08bbd45260b\" class=\"hs-cta-img outlineButtonBlue\" style=\"border-width: 0px; /*hs-extra-styles*/\" mce_noresize=\"1\" alt=\"Read All Case Studies\" src=\"https://cdn2.hubspot.net/hubshot/20/10/28/a2b60c23-158c-4254-9b27-242cc0bafd7f.png\" srcset=\"https://cdn2.hubspot.net/hubshot/20/10/28/1e8e96ac-c6bf-42ce-83a9-acb8239e56ce.png 4x, https://cdn2.hubspot.net/hubshot/20/10/28/8736465e-3d58-4eec-a5ac-fb92d3cd5010.png 3x, https://cdn2.hubspot.net/hubshot/20/10/28/da3c86d3-479d-4b21-aa42-ec4639a56a78.png 2x\"/></a>","is_image":false,"placement_element_class":"hs-cta-20cfb280-3244-46a5-9784-f08bbd45260b","raw_html":"<a id=\"cta_button_381663_a4a88014-bf3a-4315-8b56-0a9123d80cf8\" class=\"cta_button outlineButtonBlue\" href=\"https://www.schilllandscaping.com/cs/c/?cta_guid=a4a88014-bf3a-4315-8b56-0a9123d80cf8&signature=AAH58kGSXBN4Q04NA3wpw8QTgnv0bPh3Dg&pageId=7494945147&placement_guid=20cfb280-3244-46a5-9784-f08bbd45260b&click=9dec1b98-db41-4b7e-b30d-ff66e78069a9&hsutk=c7a000001dd517361737017a48f9c8e2&canon=https%3A%2F%2Fwww.schilllandscaping.com%2F&utm_referrer=https%3A%2F%2Fwww.google.com.hk%2F&portal_id=381663&redirect_url=APefjpG7O05JplcTAd6j13eyAOwkbLV5i0K5ZRjlb_tp-h7DqLSpWqDW3MgJ3O-o79HRNlAI0LNsfDY129Jl0JRG5yD6TRTJMSYGWmZ53EztTQ4W_fvLFNMxE2j0Y5yiuIoyln5gkNPY\"  style=\"/*hs-extra-styles*/\" cta_dest_link=\"https://www.schilllandscaping.com/case-studies\" title=\"Read All Case Studies\">Read All Case Studies</a>"};
+    var __hs_cta = {};
+
+    __hs_cta.drop = function() {
+        var is_legacy = document.getElementById('hs-cta-ie-element') && true || false,
+            html = __hs_cta_json.image_html,
+            tags = __hs_cta.getTags(),
+            is_image = __hs_cta_json.is_image,
+            parent, _style;
+
+        if (!is_legacy && !is_image) {
+            parent = (document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]);
+
+            _style = document.createElement('style');
+            parent.insertBefore(_style, parent.childNodes[0]);
+            try {
+                default_css = ".hs-cta-wrapper p, .hs-cta-wrapper div { margin: 0; padding: 0; }";
+                cta_css = default_css + " " + __hs_cta_json.css;
+                // http://blog.coderlab.us/2005/09/22/using-the-innertext-property-with-firefox/
+                _style[document.all ? 'innerText' : 'textContent'] = cta_css;
+            } catch (e) {
+                // addressing an ie9 issue
+                _style.styleSheet.cssText = cta_css;
+            }
+            
+            html = __hs_cta_json.raw_html;
+
+        }
+         
+
+        for (var i = 0; i < tags.length; ++i) {
+
+            var tag = tags[i];
+            var images = tag.getElementsByTagName('img');
+            var cssText = "";
+            var align = "";
+            for (var j = 0; j < images.length; j++) {
+                align = images[j].align;
+                images[j].style.border = '';
+                images[j].style.display = '';
+                cssText = images[j].style.cssText;
+            }
+
+            if (align == "right") {
+                tag.style.display = "block";
+                tag.style.textAlign = "right";
+            } else if (align == "middle") {
+                tag.style.display = "block";
+                tag.style.textAlign = "center";
+            }
+
+            tag.innerHTML = html.replace('/*hs-extra-styles*/', cssText);
+            tag.style.visibility = 'visible';
+            tag.setAttribute('data-hs-drop', 'true');
+            window.hbspt && hbspt.cta && hbspt.cta.afterLoad && hbspt.cta.afterLoad('20cfb280-3244-46a5-9784-f08bbd45260b');
+        }
+
+        return tags;
+    };
+
+    __hs_cta.getTags = function() {
+        var allTags, check, i, divTags, spanTags,
+            tags = [];
+            if (document.getElementsByClassName) {
+                allTags = document.getElementsByClassName(__hs_cta_json.placement_element_class);
+                check = function(ele) {
+                    return (ele.nodeName == 'DIV' || ele.nodeName == 'SPAN') && (!ele.getAttribute('data-hs-drop'));
+                };
+            } else {
+                allTags = [];
+                divTags = document.getElementsByTagName("div");
+                spanTags = document.getElementsByTagName("span");
+                for (i = 0; i < spanTags.length; i++) {
+                    allTags.push(spanTags[i]);
+                }
+                for (i = 0; i < divTags.length; i++) {
+                    allTags.push(divTags[i]);
+                }
+
+                check = function(ele) {
+                    return (ele.className.indexOf(__hs_cta_json.placement_element_class) > -1) && (!ele.getAttribute('data-hs-drop'));
+                };
+            }
+            for (i = 0; i < allTags.length; ++i) {
+                if (check(allTags[i])) {
+                    tags.push(allTags[i]);
+                }
+            }
+        return tags;
+    };
+
+    // need to do a slight timeout so IE has time to react
+    setTimeout(__hs_cta.drop, 10);
+    
+    window._hsq = window._hsq || [];
+    window._hsq.push(['trackCtaView', '20cfb280-3244-46a5-9784-f08bbd45260b', 'a4a88014-bf3a-4315-8b56-0a9123d80cf8']);
+    
+
+}());
